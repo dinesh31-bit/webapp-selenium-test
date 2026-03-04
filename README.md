@@ -11,6 +11,7 @@ mvn test -DTEST_URL=http://13.56.184.225:8080/student-reg-webapp/
 ```
 
 # Run tests with URL from env
+```bash
 mvn test -DTEST_URL=$TEST_URL
 ```
 
