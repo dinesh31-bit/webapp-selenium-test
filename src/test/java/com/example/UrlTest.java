@@ -1,16 +1,19 @@
 package com.example;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.*;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import static org.junit.Assert.*;
+import org.junit.After;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class UrlTest {
     private WebDriver driver;
@@ -31,7 +34,7 @@ public class UrlTest {
         driver.get(testUrl);
         String title = driver.getTitle();
         System.out.println("✅ Page title is: " + title);
-        assertTrue("Page title should contain 'https://github.com/dinesh31-bit/webapp-selenium-test.git'", title.contains("Rushi Tech - Course Registration"));
+        assertTrue("Page title should contain 'Mr.P.V.Diensh reddy'", title.contains("Mr.P.V.Diensh reddy"));
     }
  
     @Test
