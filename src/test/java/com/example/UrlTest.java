@@ -31,7 +31,7 @@ public class UrlTest {
         driver.get(testUrl);
         String title = driver.getTitle();
         System.out.println("✅ Page title is: " + title);
-        assertTrue("Page title should contain 'Rushi Tech - Course Registration'", title.contains("Rushi Tech - Course Registration"));
+        assertTrue("Page title should contain 'https://github.com/dinesh31-bit/webapp-selenium-test.git'", title.contains("Rushi Tech - Course Registration"));
     }
  
     @Test
