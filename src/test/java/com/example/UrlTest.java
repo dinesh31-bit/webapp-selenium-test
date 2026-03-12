@@ -34,7 +34,7 @@ public class UrlTest {
         driver.get(testUrl);
         String title = driver.getTitle();
         System.out.println("✅ Page title is: " + title);
-        assertTrue("Page title should contain 'Diensh Reddy'", title.contains("Diensh Reddy"));
+        assertTrue("Page title should contain 'Dinesh Reddy'", title.contains("Dinesh Reddy"));
     }
  
     @Test
